@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home - Taskl</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" href="fevicon.png" type="image/png" sizes="16x16">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body,
+    row,
+    container-fluid {
+      margin: 0;
+      padding: 0;
+    }
+
+   /* .bg-danger {
+      background: #4796e0 !important;
+    }*/
+
+    /****Menu3 Start**************/
+
+    #menu3 .navbar-nav {
+      margin: 0;
+      padding: 0;  
+     font-family: 'Shrikhand', cursive;
+    }
+
+    #menu3 .nav-item {
+      padding: 0 2px !important;
+    }
+
+	#menu3 ul li .active::after, #menu3 ul li :hover::after {		
+		position: absolute;
+		margin-left:-20px;
+		width: 100%;
+		height: 20px;
+		background-repeat: no-repeat;
+		bottom: -12px;
+		content: url(menu15_2.png);
+		align-content: center;
+		text-align:center;
+		align-items:center;
+	        display: flex;
+		justify-content: center;
+		float:none;
+	}
+
+
+ #menu3 .active{
+     display: flex;
+      position: relative;
+      text-decoration: none;
+      color: #fff;     
+	  background: #b3dced; 
+	 background: -moz-radial-gradient(center, ellipse cover,  #b3dced 0%, #29b8e5 50%); 
+	 background: -webkit-radial-gradient(center, ellipse cover,  #b3dced 0%,#29b8e5 50%);
+	 background: radial-gradient(ellipse at center,  #b3dced 0%,#29b8e5 50%);
+	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#29b8e5',GradientType=1 );
+  padding: 15px 20px;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      text-shadow: 0 0 4px #000;
+    }
+    #menu3 .nav-link:hover {
+      position: relative;
+      text-decoration: none;
+      color: #fff;
+     background: #b3dced; 
+	 background: -moz-radial-gradient(center, ellipse cover,  #b3dced 0%, #29b8e5 50%); 
+	 background: -webkit-radial-gradient(center, ellipse cover,  #b3dced 0%,#29b8e5 50%);
+	 background: radial-gradient(ellipse at center,  #b3dced 0%,#29b8e5 50%);
+	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#29b8e5',GradientType=1 );
+
+    }
+
+    #menu3 .nav-link {
+      padding: 15px 20px;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      background: #585b63;
+      text-shadow: 0 0 4px #000;
+    }
+
+
+/*** menu3 end****/
+
+    .vmenu .nav-link {
+      color: #000;
+      font-weight: 400;
+    }
+
+    .points h3 {
+      color: #16ade1;
+    }
+
+    .photos {
+      margin-top: -130px;
+    }
+
+    .photos img {
+      border: 10px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 5px #ddd;
+      display: flex;
+      justify-content: center;
+    }
+
+    .img1 {
+      margin: 10px;
+      max-width: 200px;
+      height: 200px;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-position: center center;
+      object-fit: cover;
+      background-attachment: fixed;
+    }
+
+    .img2 {
+      margin: 10px;
+      width: 350px;
+      max-height: 220px;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-position: center center;
+      object-fit: cover;
+      background-attachment: fixed;
+    }
+
+    .fl {
+      float: left;
+    }
+
+    .fr {
+      float: right;
+    }
+
+    .cb {
+      clear: both;
+    }
+
+
+
+    input[type=tel],
+    input[type=email],
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    #fmenu a {
+      text-decoration: none;
+      color: #ddd;
+      padding: 15px;
+      font-size: 0.91rem
+    }
+
+    .services {
+      -webkit-column-count: 2;
+      /* Chrome, Safari, Opera */
+      -moz-column-count: 2;
+      /* Firefox */
+      column-count: 2;
+    }
+
+
+    @media (max-width: 800px) {
+      .unsubimg {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .unsubimg {
+        display: none !important;
+      }
+
+
+      .services {
+        -webkit-column-count: 1;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 1;
+        /* Firefox */
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="col-12" id="home">
+    <nav id="menu3" class="fixed-top navbar navbar-expand-sm  navbar-dark" tabindex="1"
+      style="margin:0!important; padding:0!important; ">
+      <div class="container-fluid ">
+        <div class="container">
+          <div class="row py-4 ps-3">
+            <div class="col-md-12">
+              <img src="taskl.png">
+
+
+              <button class="navbar-toggler float-end text-end bg-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon "></span>
+              </button>
+              <div class="collapse navbar-collapse float-end" id="collapsibleNavbar">
+
+                <ul class="navbar-nav d-flex  text-dark  ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#about-us">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#unsubscribe">Unsubscribe</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="index.html#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+
+
+<div class="container pt-5">
+  <div class="row">
+
+    <div class="col-sm-12"><br><br><br>
+      <h3>Privacy Policy</h3>
+      This Statement is effective as of February 20, 2014.<br>
+      Taskl respects your privacy. This Statement describes how we collect and use the personal information you
+      provide to us. It applies to Taskl and any of our business partners in which your business have been
+      referred to by us.<br><br>
+
+      <b style="color:#444;font-size:14pt;">Collection of Personal Information</b><br><br> Taskl
+
+      collects personal information for a variety of reasons. For example, to deliver a product or service
+      that you have requested, enable your participation in online activities, or personalize your experience. We will
+      explain why we need to collect this information when we ask you for it and keep it to fulfill the purposes for
+      which it was collected or as required by applicable laws or regulations.<br><br>
+      <b style="color:#444;font-size:14pt;">Use of Personal Information </b><br><br>
+      Taskl
+
+      will use your personal information for the purpose it was collected. We will not use your personal
+      information for a different purpose without first asking your permission. We may share your personal information
+      with authorized third parties. We do not allow third parties to use your personal information for a different
+      purpose.<br><br>
+      <b style="color:#444;font-size:14pt;">Marketing</b><br><br>
+      The information you provide to Taskl, as well as the information we have collected about you indirectly,
+      may be used by us for marketing purposes. Before we do so, however, we will offer you the opportunity to choose
+      whether or not to have your information used in this way. You may at any time choose not to receive marketing
+      materials from us by following the unsubscribe instructions included in each e-mail you may receive, by
+      indicating so when we call you, or by contacting us directly.<br><br>
+      <b style="color:#444;font-size:14pt;">Protect the Rights and Property of Taskland Others</b><br><br>
+      We may also use or share your information to protect the rights or property of Tasklour business
+      partners,
+      suppliers, clients, or others when we have reasonable grounds to believe that such rights or property have been
+      or could be affected. In addition, we reserve the right to disclose your personal information as required by law
+      and when we believe that disclosure is necessary to protect our rights, or the rights of others, or to comply
+      with a judicial proceeding, court order, or legal process served on our organization.<br><br>
+      <b style="color:#444;font-size:14pt;">Notification of Changes</b><br><br>
+      We will post a notice for 30 days at the top of this page notifying users when this Privacy Statement is updated
+      or modified in a material way. If we are going to use your personal information in a manner different from that
+      stated at the time of collection, we will notify you, and you will have a choice as to whether or not we can use
+      your personal information in such a way.<br><br>
+      <b style="color:#444;font-size:14pt;">Updating Your Information</b> <br><br>
+      You may alter, update or remove your personal information or opt out of receiving communications from us and our
+      partners at any time by contacting us.<br><br>
+
+      <b style="color:#444;font-size:14pt;">Contact Us</b><br>
+      You can reach us by using the "Contact Us" form or send a letter to the mailing address listed below. Please
+      include your contact information, name of the web site or service, and a detailed description of your request or
+      privacy concern.
+    </div>
+
+
+  </div>
+</div>
+
+
+
+  <div class="container-fluid" style="margin:0!important;padding:0!important;">
+    <div class="mt-5 p-4 bg-dark text-white text-center">
+      <p>
+      <div id="fmenu">
+        <a href="privacy-policy.html" style="display:inline-block;">Privacy Policy</a> | <a href="terms-of-use.html"
+          style="display:inline-block;">Terms of Use</a> | <a href="index.html#unsubscribe"
+          style="display:inline-block;">Unsubscribe</a> | <a href="index.html#contact" style="display:inline-block;">Contact</a>
+      </div>
+      </p>
+
+      <p>copyright &copy;2023 __tk[domain] | all rights reserved.</p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var postv = window.location.pathname;
+
+    for (var i = 0; i < document.links.length; i++) {
+      if (document.links[i].href == document.URL) {
+        document.links[i].className = 'active';
+      }
+    }
+
+  </script>
+</body>
+
+</html>

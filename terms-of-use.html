@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home - Taskl</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" href="fevicon.png" type="image/png" sizes="16x16">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body,
+    row,
+    container-fluid {
+      margin: 0;
+      padding: 0;
+    }
+
+   /* .bg-danger {
+      background: #4796e0 !important;
+    }*/
+
+    /****Menu3 Start**************/
+
+    #menu3 .navbar-nav {
+      margin: 0;
+      padding: 0;  
+     font-family: 'Shrikhand', cursive;
+    }
+
+    #menu3 .nav-item {
+      padding: 0 2px !important;
+    }
+
+	#menu3 ul li .active::after, #menu3 ul li :hover::after {		
+		position: absolute;
+		margin-left:-20px;
+		width: 100%;
+		height: 20px;
+		background-repeat: no-repeat;
+		bottom: -12px;
+		content: url(menu15_2.png);
+		align-content: center;
+		text-align:center;
+		align-items:center;
+	        display: flex;
+		justify-content: center;
+		float:none;
+	}
+
+
+ #menu3 .active{
+     display: flex;
+      position: relative;
+      text-decoration: none;
+      color: #fff;     
+background: #fceabb; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #fceabb 9%, #f8b500 68%, #f8b500 77%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #fceabb 9%,#f8b500 68%,#f8b500 77%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #fceabb 9%,#f8b500 68%,#f8b500 77%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#f8b500',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  padding: 15px 20px;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      text-shadow: 0 0 4px #000;
+    }
+    #menu3 .nav-link:hover {
+      position: relative;
+      text-decoration: none;
+      color: #fff;
+     
+background: #fceabb; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #fceabb 9%, #f8b500 68%, #f8b500 77%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #fceabb 9%,#f8b500 68%,#f8b500 77%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #fceabb 9%,#f8b500 68%,#f8b500 77%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#f8b500',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    }
+
+    #menu3 .nav-link {
+      padding: 15px 20px;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      background: #585b63;
+      text-shadow: 0 0 4px #000;
+    }
+
+
+/*** menu3 end****/
+
+    .vmenu .nav-link {
+      color: #000;
+      font-weight: 400;
+    }
+
+    .points h3 {
+      color: #16ade1;
+    }
+
+    .photos {
+      margin-top: -130px;
+    }
+
+    .photos img {
+      border: 10px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 5px #ddd;
+      display: flex;
+      justify-content: center;
+    }
+
+    .img1 {
+      margin: 10px;
+      max-width: 200px;
+      height: 200px;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-position: center center;
+      object-fit: cover;
+      background-attachment: fixed;
+    }
+
+    .img2 {
+      margin: 10px;
+      width: 350px;
+      max-height: 220px;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-position: center center;
+      object-fit: cover;
+      background-attachment: fixed;
+    }
+
+    .fl {
+      float: left;
+    }
+
+    .fr {
+      float: right;
+    }
+
+    .cb {
+      clear: both;
+    }
+
+
+
+    input[type=tel],
+    input[type=email],
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    #fmenu a {
+      text-decoration: none;
+      color: #ddd;
+      padding: 15px;
+      font-size: 0.91rem
+    }
+
+    .services {
+      -webkit-column-count: 2;
+      /* Chrome, Safari, Opera */
+      -moz-column-count: 2;
+      /* Firefox */
+      column-count: 2;
+    }
+
+
+    @media (max-width: 800px) {
+      .unsubimg {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .unsubimg {
+        display: none !important;
+      }
+
+
+      .services {
+        -webkit-column-count: 1;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 1;
+        /* Firefox */
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="col-12" id="home">
+    <nav id="menu3" class="fixed-top navbar navbar-expand-sm  navbar-dark" tabindex="1"
+      style="margin:0!important; padding:0!important; ">
+      <div class="container-fluid ">
+        <div class="container">
+          <div class="row py-4 ps-3">
+            <div class="col-md-12">
+              <img src="taskl.png">
+
+
+              <button class="navbar-toggler float-end text-end bg-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon "></span>
+              </button>
+              <div class="collapse navbar-collapse float-end" id="collapsibleNavbar">
+
+                <ul class="navbar-nav d-flex  text-dark  ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#about-us">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#unsubscribe">Unsubscribe</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="index.html#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+<div class="container pt-5">
+  <div class="row">
+
+    <div class="col-sm-12"><br><br><br>
+      <h3>Terms of Use</h3>
+      Please read these Terms of Use carefully before using this site.<br><br>
+
+      The following are terms of a legal agreement between you and Taskl. By accessing, browsing, or using this
+      Web site, you acknowledge that you have read, understood, and agree to be bound by the following Terms of Use.
+      If you do not agree to these Terms, please do not use this Web site.<br><br>
+
+      Taskl may, without notice to you, at any time revise these Terms of Use and any other information
+      contained
+      in this Web site by updating this posting. Taskl may also make improvements or changes in the products,
+      services, or programs described in this site at any time without notice.<br><br>
+
+      <b style="color:#444;font-size:14pt;">General</b><br>
+      This Web site contains proprietary information. All content in this site may not be copied, reproduced,
+      republished, uploaded, posted, transmitted, distributed, or used for the creation of derivative works without
+      Taskl's prior written consent, except if we grant you non-exclusive, non-transferable, limited permission
+      to access and display the Web pages within this site. This permission is conditioned on your not modifying the
+      content displayed on this site.<br><br>
+
+      Your failure to comply with the terms, conditions, and notices on this site will result in automatic termination
+      of any rights granted to you, without prior notice, and you must immediately destroy all copies of downloaded
+      materials in your possession or control, except for the limited permission in the preceding paragraph.<br><br>
+
+      <b style="color:#444;font-size:14pt;">Privacy</b><br>
+      Information submitted to Taskl is governed according to our Privacy Policy.
+      <br><br>
+      <b style="color:#444;font-size:14pt;">Certain Disclaimers</b><br>
+      Information on this Web site is not promised or guaranteed to be correct, current, or complete, and this site
+      may contain technical inaccuracies or typographical errors. Taskl assumes no responsibility (and
+      expressly
+      disclaims responsibility) for updating this site to keep information current or to ensure the accuracy or
+      completeness of any posted information. Accordingly, you should confirm the accuracy and completeness of all
+      posted information before making any decision related to any services, products, or other matters described in
+      this site.<br>
+      Taskl provides no assurances that any reported problems will be resolved by us, even if we elect to
+      provide
+      information with the goal of addressing a problem.<br><br>
+
+      <b style="color:#444;font-size:14pt;">Translations</b><br>
+      Certain text in this Web site may be made available in languages other than English. Text may be translated by a
+      person or solely by computer software with no human intervention or review. These translations are provided as a
+      convenience to you, and IBM makes no representations or commitments regarding the accuracy or completeness of
+      the translation, whether or not computer-generated or performed by a person. Please see the below Disclaimer of
+      Warranty for additional conditions.<br><br>
+
+      <b style="color:#444;font-size:14pt;">DISCLAIMER OF WARRANTY</b><br>
+      USE OF THIS SITE IS AT YOUR SOLE RISK. ALL MATERIALS, INFORMATION, PRODUCTS, SOFTWARE, PROGRAMS, AND SERVICES
+      ARE PROVIDED “AS IS,” WITH NO WARRANTIES OR GUARANTEES WHATSOEVER. Taskl EXPRESSLY DISCLAIMS TO THE
+      FULLEST
+      EXTENT PERMITTED BY LAW ALL EXPRESS, IMPLIED, STATUTORY, AND OTHER WARRANTIES, GUARANTEES, OR REPRESENTATIONS,
+      INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+      NON-INFRINGEMENT OF PROPRIETARY AND INTELLECTUAL PROPERTY RIGHTS. WITHOUT LIMITATION, IBM MAKES NO WARRANTY OR
+      GUARANTEE THAT THIS WEB SITE WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE.<br><br>
+
+      YOU UNDERSTAND AND AGREE THAT IF YOU DOWNLOAD OR OTHERWISE OBTAIN ANY OF OUR MATERIALS, INFORMATION, PRODUCTS,
+      SOFTWARE, PROGRAMS, OR SERVICES, YOU DO SO AT YOUR OWN DISCRETION AND RISK AND THAT YOU WILL BE SOLELY
+      RESPONSIBLE FOR ANY DAMAGES THAT MAY RESULT, INCLUDING LOSS OF DATA OR DAMAGE TO YOUR COMPUTER SYSTEM.<br>
+      SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF WARRANTIES, SO THE ABOVE EXCLUSIONS MAY NOT APPLY TO
+      YOU.<br><br>
+
+      <b style="color:#444;font-size:14pt;">LIMITATION OF LIABILITY</b><br>
+      IN NO EVENT WILL Taskl BE LIABLE TO ANY PARTY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY OR
+      CONSEQUENTIAL DAMAGES OF ANY TYPE WHATSOEVER RELATED TO OR ARISING FROM THIS WEB SITE OR ANY USE OF THIS WEB
+      SITE, OR OF ANY SITE OR RESOURCE LINKED TO, REFERENCED, OR ACCESSED THROUGH THIS WEB SITE, OR FOR THE USE OR
+      DOWNLOADING OF, OR ACCESS TO, ANY MATERIALS, INFORMATION, PRODUCTS, OR SERVICES, INCLUDING, WITHOUT LIMITATION,
+      ANY LOST PROFITS, BUSINESS INTERRUPTION, LOST SAVINGS OR LOSS OF PROGRAMS OR OTHER DATA, EVEN IF Taskl IS
+      EXPRESSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THIS EXCLUSION AND WAIVER OF LIABILITY APPLIES TO ALL
+      CAUSES OF ACTION, WHETHER BASED ON CONTRACT, WARRANTY, TORT, OR ANY OTHER LEGAL THEORIES.<br><br>
+
+      Additional or different terms, conditions, and notices may apply to specific materials, information, products,
+      software, and services offered through this Web site. In the event of any conflict, such additional or different
+      terms, conditions, and notices will prevail over these Terms of Use.
+
+    </div>
+
+  </div>
+</div>
+
+
+
+  <div class="container-fluid" style="margin:0!important;padding:0!important;">
+    <div class="mt-5 p-4 bg-dark text-white text-center">
+      <p>
+      <div id="fmenu">
+        <a href="privacy-policy.html" style="display:inline-block;">Privacy Policy</a> | <a href="terms-of-use.html"
+          style="display:inline-block;">Terms of Use</a> | <a href="index.html#unsubscribe"
+          style="display:inline-block;">Unsubscribe</a> | <a href="index.html#contact" style="display:inline-block;">Contact</a>
+      </div>
+      </p>
+
+      <p>copyright &copy;2023 __tk[domain] | all rights reserved.</p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var postv = window.location.pathname;
+
+    for (var i = 0; i < document.links.length; i++) {
+      if (document.links[i].href == document.URL) {
+        document.links[i].className = 'active';
+      }
+    }
+
+  </script>
+</body>
+
+</html>
