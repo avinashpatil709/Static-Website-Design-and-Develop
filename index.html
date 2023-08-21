@@ -9,9 +9,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="icon" href="fevicon.png" type="image/png" sizes="16x16">
   <link rel="stylesheet" href="style.css">
+  <script>
+  let circle = document.querySelector('#circle');
+  
+window.addEventListener('mousemove', function(details){
+    let xValue = details.clientX;
+    let yValue = details.clientY;
+
+    setTimeout(function(){
+        circle.style.top = `${yValue}px`;
+        circle.style.left = `${xValue}px`;
+    }, 50);
+});
+
+  </script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#home" data-bs-offset="0" style="margin:0!important; padding:0!important;" onload="createCaptcha()">
+    <div id="circle"></div>
   <div class="col-12" id="home">
     <nav id="menu3" class="fixed-top navbar navbar-expand-sm  navbar-dark" tabindex="1"
       style="margin:0!important; padding:0!important; ">
