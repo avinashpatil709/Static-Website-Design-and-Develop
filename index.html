@@ -23,6 +23,9 @@
   transform: translate(-50%, -50%);
   transition: .1s;
 }
+.gray-box p{
+}
+
 
 .cursor2{
   position: fixed;
@@ -37,13 +40,13 @@
   transition: .15s;
 }
 
-.col-md-12:hover ~ .cursor{
+#gray-box:hover ~ .cursor{
   transform: translate(-50%, -50%) scale(1.5);
   background-color: #c6c6c6;
   opacity: .5;
 }
 
-.col-md-12:hover ~ .cursor2{
+#gray-box:hover ~ .cursor2{
   opacity: 0;
 }
   </style>
@@ -134,8 +137,9 @@
 
   <div class="container mt-5">
     <div class="row">
-      <div class="col-sm-9" id="about-us">
+      <div class="col-sm-9 " id="about-us">
         <br>
+		
         <h2>Know our services</h2>
         <p style="font-size:13pt;line-height:1.5em;color:gray;text-indent: 50px; color:#888;" class="services">
           Finance is a vast and dynamic field that encompasses the management of money, investments, and financial
@@ -162,6 +166,7 @@
           hedging, insurance, and other techniques to minimize financial losses and protect against uncertainties.
         </p>
 		
+      
       </div>
 
       <div class="col-md-3">
@@ -282,6 +287,7 @@
     </div>  
 
   </div>
+  
   <div class="cursor"></div>
   <div class="cursor2"></div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
