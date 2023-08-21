@@ -23,6 +23,19 @@ window.addEventListener('mousemove', function(details){
 });
 
   </script>
+  <style>
+  #circle{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    z-index: 999999999;
+    border-radius: 50%;
+    pointer-events: none;
+    border: 1.2px solid #fff;
+}
+
+  </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#home" data-bs-offset="0" style="margin:0!important; padding:0!important;" onload="createCaptcha()">
