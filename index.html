@@ -284,6 +284,7 @@ function validateCaptcha() {
   debugger
   if (document.getElementById("cpatchaTextBox").value == code) {
      swal("Thank You!", "You have been Successfully connected!", "success");
+	 document.getElementById("myForm").reset();
   }else{
    /* alert("Invalid Captcha. try Again");*/
      document.getElementById('ErrCaptcha').innerHTML = "Please enter the valid Captcha";
