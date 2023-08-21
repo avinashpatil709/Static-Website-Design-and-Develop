@@ -25,7 +25,7 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#home" data-bs-offset="0" style="margin:0!important; padding:0!important;" onload="createCaptcha()">
-    <div id="circle"></div>
+   
   <div class="col-12" id="home">
     <nav id="menu3" class="fixed-top navbar navbar-expand-sm  navbar-dark" tabindex="1"
       style="margin:0!important; padding:0!important; ">
@@ -256,10 +256,9 @@
       <p>copyright &copy;2023 Avinash Patil | all rights reserved.</p>
     </div>
   </div>
-   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-<script>
-  let circle = document.querySelector('#circle');
+    <div id="circle"></div>	
+	<script>
+	 let circle = document.querySelector('#circle');
   
 window.addEventListener('mousemove', function(details){
     let xValue = details.clientX;
@@ -270,6 +269,10 @@ window.addEventListener('mousemove', function(details){
         circle.style.left = `${xValue}px`;
     }, 50);
 });
+	</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<script>
+ 
 
 
 
