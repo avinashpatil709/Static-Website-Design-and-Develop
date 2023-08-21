@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+		<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -37,13 +37,13 @@
   transition: .15s;
 }
 
-.content:hover ~ .cursor{
+.gray-box:hover ~ .cursor{
   transform: translate(-50%, -50%) scale(1.5);
   background-color: #c6c6c6;
   opacity: .5;
 }
 
-.content:hover ~ .cursor2{
+.gray-box:hover ~ .cursor2{
   opacity: 0;
 }
   </style>
@@ -291,9 +291,7 @@
     document.addEventListener("mousemove",function(e){
       cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
     });
-  </script>
- 
-<script>
+  
  
 
 
