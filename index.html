@@ -9,21 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="icon" href="fevicon.png" type="image/png" sizes="16x16">
   <link rel="stylesheet" href="style.css">
-  <script>
-  let circle = document.querySelector('#circle');
-  
-window.addEventListener('mousemove', function(details){
-    let xValue = details.clientX;
-    let yValue = details.clientY;
-
-    setTimeout(function(){
-        circle.style.top = `${yValue}px`;
-        circle.style.left = `${xValue}px`;
-    }, 50);
-});
-
-  </script>
-  <style>
+   <style>
   #circle{
     position: absolute;
     transform: translate(-50%, -50%);
@@ -34,7 +20,7 @@ window.addEventListener('mousemove', function(details){
     pointer-events: none;
     border: 1.2px solid #fff;
 }
-
+	
   </style>
 </head>
 
@@ -270,9 +256,23 @@ window.addEventListener('mousemove', function(details){
       <p>copyright &copy;2023 Avinash Patil | all rights reserved.</p>
     </div>
   </div>
-  
+   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-  <script>
+<script>
+  let circle = document.querySelector('#circle');
+  
+window.addEventListener('mousemove', function(details){
+    let xValue = details.clientX;
+    let yValue = details.clientY;
+
+    setTimeout(function(){
+        circle.style.top = `${yValue}px`;
+        circle.style.left = `${xValue}px`;
+    }, 50);
+});
+
+
+
 
     function func1() {
       swal("Thank You!", "You have been Successfully connected 2 Avinash!", "success");
